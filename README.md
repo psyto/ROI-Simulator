@@ -142,6 +142,9 @@ ROI-Simulator/
 │   ├── components/
 │   │   ├── InputForm.tsx      # Input form component
 │   │   └── Dashboard.tsx      # Results dashboard with visualizations
+│   ├── i18n/
+│   │   ├── LanguageContext.tsx # Language context provider (EN/JA)
+│   │   └── translations.ts   # Translation strings
 │   ├── utils/
 │   │   ├── calculations.ts    # ROI calculation logic
 │   │   └── pdfGenerator.ts   # PDF report generation
@@ -165,6 +168,7 @@ ROI-Simulator/
 ✅ **Sensitivity Analysis** - Real-time visualization of alpha impact
 ✅ **PDF Report Generation** - Complete report with all calculations and regulatory context
 ✅ **Session-Based Design** - No data persistence, all processing in browser
+✅ **Multilingual Support** - English and Japanese (EN/JA) language switching
 ✅ **Professional UI** - Clean, modern interface suitable for executive presentations
 
 ### 5.7. Technology Stack
