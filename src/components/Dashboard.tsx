@@ -1,4 +1,3 @@
-import React from 'react';
 import { SimulationResults, SimulationInput } from '../types';
 import { formatCurrency, formatPercentage } from '../utils/calculations';
 import { useLanguage } from '../i18n/LanguageContext';

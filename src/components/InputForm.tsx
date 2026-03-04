@@ -1,4 +1,3 @@
-import React from 'react';
 import { SimulationInput, AssetClass, Currency } from '../types';
 import { useLanguage } from '../i18n/LanguageContext';
 import { getDefaultAlphaForAssetClass, getAverageDefaultAlpha, calculateAssetClassWeightedAverage } from '../utils/calculations';

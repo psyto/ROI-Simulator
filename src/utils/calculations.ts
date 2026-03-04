@@ -10,9 +10,6 @@ const RWA_REDUCTION_FACTOR_PER_DAY = 0.15; // 0.15% per day
 // Default conservative reinvestment rate if not provided
 const DEFAULT_REINVESTMENT_RATE = 2.0; // 2% annual
 
-// Default differentiated alpha if not provided (based on DeFi composability)
-const DEFAULT_DIFFERENTIATED_ALPHA = 7.0; // 7% additional yield (between 8-9% base and 16% max)
-
 // Default legacy settlement cost per transaction (estimated)
 const DEFAULT_LEGACY_SETTLEMENT_COST = 10.0; // $10 per transaction
 
@@ -164,7 +161,6 @@ export function calculateAlphaFromDeFiParams(
   collateralizationRatio: number,
   borrowingRate: number,
   reinvestmentRate: number,
-  baseYield: number = 8.5
 ): number {
   // Validate inputs
   if (collateralizationRatio <= 0 || collateralizationRatio > 1) {
@@ -286,7 +282,6 @@ export function calculateDifferentiatedYieldAlpha(input: SimulationInput): Diffe
         collateralizationRatio,
         borrowingRate,
         defiReinvestmentRate,
-        baseYield
       );
     } catch (error) {
       // Fallback to asset class default if calculation fails

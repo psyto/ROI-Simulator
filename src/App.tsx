@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import InputForm from './components/InputForm';
 import Dashboard from './components/Dashboard';
 import { SimulationInput, SimulationResults } from './types';
